@@ -1,0 +1,26 @@
+---Find files by name
+find /var/www -name '*.css'
+
+---Find files containing text
+grep font /var/www/html/style.css
+
+--bir klasör altındaki tüm dosyalarda metin aramak için :
+grep -R font /var/www/html/
+
+
+cat /etc/*release
+cat  /etc/os-release
+cat /etc/redhat-release
+
+uname -a
+
+-s, --kernel-name Print the kernel name.
+-n, --nodename Print the network node hostname.
+-r, --kernel-release Print the kernel release.
+-v, --kernel-version Print the kernel version.
+-m, --machine Print the machine hardware name.
+-p, --processor Print the processor type, or "unknown".
+-i, --hardware-platform Print the hardware platform, or "unknown".
+-o, --operating-system Print the operating system.
+--help Display a help message, and exit.
+--version Display version information, and exit.
