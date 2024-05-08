@@ -24,3 +24,9 @@ uname -a
 -o, --operating-system Print the operating system.
 --help Display a help message, and exit.
 --version Display version information, and exit.
+
+CPU
+ mpstat 2 10
+
+Memory
+vmstat 2 10
