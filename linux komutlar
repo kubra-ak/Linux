@@ -30,3 +30,24 @@ CPU
 
 Memory
 vmstat 2 10
+
+Find komutu:
+
+find [dizin yolu] [parametreler] [aranacak ifade]
+
+**Dosya ismiyle arama yapmak için:
+find -name [aranacak dosya adı]
+find [dizin yolu] -name [aranacak dosya adı]
+
+**Dosya değişim zamanına göre arama yapmak için -ctime parametresi kullanılır ve kaç gün öncesine kadar olan değişim isteniyorsa gün sayısı başında – işareti olarak yazılır. 
+find Masaüstü/ -ctime -1
+
+**type parametresi ile dizin ya da dosya araması yapılabilir.
+
+-type f  :  dosya sonuçlarını gösterir.
+-type d : dizin sonuçlarını gösterir.
+
+**Dosya boyutuna göre arama
+
+find Resimler/ -name *png -size +100k  --> 100kb üstü 
+find Resimler/ -name *png -size +100k -size -5M  --> 100 KB'dan büyük 5 MB'dan küçük
