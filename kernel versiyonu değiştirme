@@ -1,0 +1,20 @@
+https://blogs.oracle.com/linux/post/changing-the-default-kernel-in-oracle-linux-its-as-simple-as-1-2-3
+
+
+[root@oracle-linux-9-instance ~]# grubby --default-kernel
+/boot/vmlinuz-5.15.0-0.30.16.el9uek.x86_64
+[root@oracle-linux-9-instance ~]# uname -r
+5.15.0-0.30.16.el9uek.x86_64
+
+
+[root@oracle-linux-9-instance ~]# grubby --info=ALL | grep ^kernel
+kernel="/boot/vmlinuz-5.15.0-0.30.16.el9uek.x86_64"
+kernel="/boot/vmlinuz-5.14.0-70.13.1.el9_0.x86_64"
+kernel="/boot/vmlinuz-0-rescue-9fe05f6ac8e542f5b4d932bbe21e58d5"   --kurtarma versiyonlarında set edilebilir
+
+
+burdaki kernel versiyonlarından birini seçiyoruz
+
+**aşağıdaki komutla default kernel versiyonunu seçiyoruz:
+[root@oracle-linux-9-instance ~]# grubby --set-default /boot/vmlinuz-5.14.0-70.13.1.el9_0.x86_64
+The default is /boot/loader/entries/9fe05f6ac8e542f5b4d932bbe21e58d5-5.14.0-70.13.1.el9_0.x86_64.conf with index 1 and kernel /boot/vmlinuz-5.14.0-70.13.1.el9_0.x86_64
