@@ -1,0 +1,7 @@
+## user add linux
+  430  2022-07-20.10:23:24 useradd -m kullanıcı.adı
+  431  2022-07-20.10:23:28 cd /home/kullanıcı.adı/
+  432  2022-07-20.10:23:31 mkdir .ssh
+  433  2022-07-20.10:23:34 cd .ssh/
+  434  2022-07-20.10:23:42 vi authorized_keys
+  435  2022-07-20.10:23:52 vi /etc/sudoers
